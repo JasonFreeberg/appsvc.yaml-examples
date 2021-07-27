@@ -30,3 +30,7 @@ run: gunicorn myapp.app --workers 5 --foo bar
       bash foo bar
       wget http://foo.bar.com > my-downloaded-tool.zip
   ```
+
+## Notes
+
+The JBoss and Tomcat runtimes don't need "run" keys because those runtimes will identify the relevant artifacts and run them. But the build keys would be helpful for configuring the Tomcat server
