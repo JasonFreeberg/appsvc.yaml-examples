@@ -1,0 +1,10 @@
+build: |
+  pip -m venv venv
+  source venv/scripts/activate
+  pip install myapp/requirements.txt
+  
+post-build: |
+  python manage.py makemigrations
+  python manage.py migrate
+
+run: gunicorn myapp.app --workers 5
