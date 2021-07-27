@@ -1,6 +1,7 @@
 # Trying to adapt the startup file here: https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/src/main/webapp/WEB-INF/createMySQLDataSource.sh
 
----
+version: 1
+
 build: |
   sed -i -e "s|.*<resolve-parameter-values.*|<resolve-parameter-values>true</resolve-parameter-values>|g" /opt/eap/bin/jboss-cli.xml
 
