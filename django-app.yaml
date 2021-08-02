@@ -1,8 +1,8 @@
 version: 1
 
 build-settings:
-  - VIRTUAL_ENV_NAME = 'venv'
-  - VIRTUAL_ENV_LOCATION = 'wwwroot/foo/bar'
+  - VIRTUAL_ENV_NAME
+  - VIRTUAL_ENV_LOCATION
 
 build: |
   pip install myapp/requirements.txt
