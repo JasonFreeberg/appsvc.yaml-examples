@@ -1,8 +1,10 @@
 version: 1
 
+build-settings:
+  - VIRTUAL_ENV_NAME = 'venv'
+  - VIRTUAL_ENV_LOCATION = 'wwwroot/foo/bar'
+
 build: |
-  python -m venv venv
-  source venv/scripts/activate
   pip install myapp/requirements.txt
   
 post-build: |
