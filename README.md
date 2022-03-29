@@ -1,6 +1,6 @@
 # Example appsvc.yaml files
 
-The App Service YAML file is uised to specify the build and run commands for your Web Apps. As of March 2022, only the "pre-build" and "post-build" commands are implemented.
+The App Service YAML file (`appsvc.yaml`) is used to specify the build and run commands for your Web Apps, thus overriding any defaults provided by the App Service Build Service. App Service expects this file to be in the root directory of your project. As of March 2022, only the "pre-build" and "post-build" commands are implemented.
 
 ## Format
 
