@@ -1,4 +1,6 @@
-# Example app.yaml files
+# Example appsvc.yaml files
+
+The App Service YAML file is uised to specify the build and run commands for your Web Apps. As of March 2022, only the "pre-build" and "post-build" commands are implemented.
 
 ## Format
 
@@ -7,7 +9,7 @@ There are ordered keys for `pre-build`, `build`, `post-build`, and `run`. The co
 ```yaml
 version: 1
 
-pre-build: apt-get install xyz
+pre-build: apt-get install jq
 
 build: pip install requirements.txt
   
@@ -15,7 +17,7 @@ post-build: |
   python manage.py makemigrations
   python manage.py migrate
   
-run: gunicorn myapp.app --workers 5 --foo bar
+run: gunicorn myapp.app --workers 5
 ```
 
 ## Open questions
